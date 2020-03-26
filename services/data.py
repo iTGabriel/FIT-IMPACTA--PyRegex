@@ -6,8 +6,8 @@ def validar(data):
     if data == None or len(data) <= 6:
         return "Quantidade de caracteres de data é menos do que esperado."
     
-    pattern1 = r'((0)[0-9]|(1)[0-9]|(2)[0-9]|(3)[0-1])\/((0)[0-9]|(1)[0-2])\/([0-2][0-9][0-9][0-9])' #dd/mm/aaaa
-    pattern2 = r'((0)[0-9]|(1)[0-9]|(2)[0-9]|(3)[0-1])\-((0)[0-9]|(1)[0-2])\-([0-2][0-9][0-9][0-9])' #dd-mm-aaaa
+    pattern1 = r'(0[0-9]|1[0-9]|2[0-9]|3[0-1])\/(0[0-9]|1[0-2])\/([0-2][0-9][0-9][0-9])' #dd/mm/aaaa
+    pattern2 = r'(0[0-9]|1[0-9]|2[0-9]|3[0-1])\-(0[0-9]|1[0-2])\-([0-2][0-9][0-9][0-9])' #dd-mm-aaaa
     pattern3 = r'([0-2][0-9][0-9][0-9])\-(0[0-9]|1[0-2])\-(0[0-9]|1[0-9]|2[0-9]|3[0-1])' #aaaa-mm-dd
     pattern4 = r'(0[0-9]|1[0-9]|2[0-9]|3[0-1])([ ]de[ ])(janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)([ ]de[ ])([0-2][0-9][0-9][0-9])' #dd de mm...m de aaaa
 
